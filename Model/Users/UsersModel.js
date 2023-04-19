@@ -7,6 +7,8 @@ const DataSchema = mongoose.Schema(
         userType:{type:String}, //student or teacher
         imageUrl:{type:String},
         roll:{type:Number,default:0},
+        group:{type:String},
+        
         address:{type:String},
         fatherName:{type:String},
         motherName:{type:String},
