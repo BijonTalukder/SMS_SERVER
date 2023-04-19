@@ -10,7 +10,7 @@ const port = process.env.PORT || 5000;
 const app = express();
 app.use(cors())
 app.use(bodyParser.json());
-const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.ywgnkn8.mongodb.net/SMS?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.7o3e4gt.mongodb.net/cms?retryWrites=true&w=majority`;
 console.log(uri)
   mongoose.connect(uri).
   catch(error => console.log(error));
