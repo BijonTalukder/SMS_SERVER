@@ -1,15 +1,9 @@
 const mongoose = require('mongoose');
 const DataSchema = mongoose.Schema({
-    roll:{type:Number},
-    Attendance:[
-       { 
-        present:{type:String},
-        absent:{type:String},
-        Date:{type:Date,default:Date.now()}
-
-        }
-        ]
-        },
+    student: { type: mongoose.Schema.Types.ObjectId, required: true },
+    date: { type: Date, required: true,default:Date.now() },
+    isPresent: { type: Boolean, default: false }
+},
 {
     versionKey:false
 })
