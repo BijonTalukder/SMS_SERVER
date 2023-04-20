@@ -6,7 +6,8 @@ console.log(group)
       [  {
           $match:{
      
-            group:group
+            group:group,
+            userType:"student"
           }
         }]
      
