@@ -21,7 +21,7 @@ router.post("/update-attendance/:id",AttendanceController.UpdateAttendance)
 
 router.post("/create-mark",MarkController.CreateMark)
 router.get("/get-mark",MarkController.GetMark)
-//router.get("/get-mark-id/:id",AttendanceController.GetAttendanceById)
+router.get("/get-mark-student/:id",MarkController.GetMarkStudent)
 router.post("/update-mark/:id",MarkController.UpdateMark)
 
 
